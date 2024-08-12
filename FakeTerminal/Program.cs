@@ -6,6 +6,8 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Net.Mime;
+using System.Reflection;
+
 
 public class Program
 {
@@ -13,14 +15,16 @@ public class Program
     {
         Clear();
         bool limitedMode = true;
-
+        
         try
         {
-            limitedMode = false;
+            // Load custom commands from DLLs
+            LoadCustomCommands();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            Console.WriteLine("Could not get all custom libraries to run, please run the command 'install_requirements' to get the full thing with all custom commands");
+            Console.WriteLine($"Could not load custom libraries: {ex.Message}");
+            Console.WriteLine("Running in limited mode with only built-in commands.");
             limitedMode = true;
         }
 
@@ -66,6 +70,25 @@ public class Program
         Console.WriteLine("Restarting script...");
         Process.Start(Process.GetCurrentProcess().MainModule.FileName);
         Environment.Exit(0);
+    }
+    public static void LoadCustomCommands()
+    {
+        string addonsPath = Path.Combine(Directory.GetCurrentDirectory(), "addons");
+        if (Directory.Exists(addonsPath))
+        {
+            foreach (string dll in Directory.GetFiles(addonsPath, "*.dll"))
+            {
+                Assembly assembly = Assembly.LoadFile(dll);
+                foreach (Type type in assembly.GetTypes())
+                {
+                    if (type.GetInterface(nameof(ICustomCommand)) != null)
+                    {
+                        ICustomCommand customCommand = (ICustomCommand)Activator.CreateInstance(type);
+                        customCommand.Register();
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -288,4 +311,9 @@ public class CommandFunctions
             Console.WriteLine(coolColors.Colorize($"-------------------------", "blue"));
         }
     }
+    
+}
+public interface ICustomCommand
+{
+    void Register();
 }
