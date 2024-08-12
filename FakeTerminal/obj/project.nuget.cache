@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "soa0LTDqdQTHAsr984zyhgq7aznnC28ay2xx/lxAznZSrTn5Rsno/W9B17ZDmMdo8tvhwzNSfQzpLY0iRaXYgw==",
+  "success": true,
+  "projectFilePath": "/home/xander/RiderProjects/FakeTerminal/FakeTerminal/FakeTerminal.csproj",
+  "expectedPackageFiles": [
+    "/home/xander/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.7/microsoft.aspnetcore.app.ref.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

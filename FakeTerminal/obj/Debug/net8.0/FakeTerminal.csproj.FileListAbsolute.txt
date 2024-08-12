@@ -1,0 +1,14 @@
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/bin/Debug/net8.0/FakeTerminal
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/bin/Debug/net8.0/FakeTerminal.deps.json
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/bin/Debug/net8.0/FakeTerminal.runtimeconfig.json
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/bin/Debug/net8.0/FakeTerminal.dll
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/bin/Debug/net8.0/FakeTerminal.pdb
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.GeneratedMSBuildEditorConfig.editorconfig
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.AssemblyInfoInputs.cache
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.AssemblyInfo.cs
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.csproj.CoreCompileInputs.cache
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.dll
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/refint/FakeTerminal.dll
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.pdb
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/FakeTerminal.genruntimeconfig.cache
+/home/xander/RiderProjects/FakeTerminal/FakeTerminal/obj/Debug/net8.0/ref/FakeTerminal.dll

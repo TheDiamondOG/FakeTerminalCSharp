@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FakeTerminal/1.0.0": {
+        "runtime": {
+          "FakeTerminal.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FakeTerminal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
